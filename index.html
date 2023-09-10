@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     footer{
+    color: #fff;
+    background-color: #161616;
+    padding: 3vh 2vw;
+}
+.footer-cont{
+    width: 100%;
+    line-height: 1.5em;
+}
+.footer-cont h4{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-cont p{
+    font-size: small;
+    margin-top: 1vh;
+}
+.footer-cont p.head{
+    color: var(--primcolor);
+    font-size: medium;
+}
+.footer-cont h4,
+.footer-cont-container{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 1vh;
+}
+.footer-cont-container{
+    display: flex;
+    gap: 4vw;
+    padding-bottom: 8vh;
+}
+.footer-cont:nth-child(3) ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 82%;
+}
+.footer-cont a{
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.footer-cont a:hover{
+    color: var(--primcolor);
+}
+.footer-cont input{
+    margin-top: 3vh;
+    background-color: inherit;
+    border:2px solid rgb(255, 255, 255, 0.4);
+    text-indent: 10px;
+    border-radius: 37% 10% 38% 0% / 36% 0% 35% 10%;
+    width: 98%;
+    height: 40px;
+    color: rgb(255, 255, 255, 0.7);
+}
+p.end-credits{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+p.end-credits span{
+    color: var(--primcolor);
+}
+
+
+
+@media screen and (max-width: 768px){
+  header{
+    padding: 15px 30px;
+  }
+  header ul {
+    padding-bottom: 0;
+    height: fit-content;
+    width: 70%;
+    gap: 10px;
+    font-size: 15px;
+  }
+  p.logo{
+    width: fit-content;
+    font-size: 30px;
+  }
+  .content h1{
+    font-size: 50px;
+    margin-top: 0;
+  }
+  .content p{
+    line-height: 0;
+  }
+  .updates h1{
+    font-size: larger;
+  }
+  .update-cont .update{
+    height: 30vh;
+    width: 31%;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  img.poster{
+    height: 40vh;
+  }
+  .about-cont .member{
+    width: 30%;
+    height: 25vh;
+  }
+  .member-desc h2{
+    font-size: medium;
+  }
+  .banner-2{
+    height: 13vh;
+  }
+  .footer-cont-container{
+    flex-wrap: wrap;
+  }
+  .footer-cont{
+    width: 47%;
+  }
+
+
+  .league-team .sect-team{
+    width: 35%;
+  }
+  p.teams{
+    font-size: medium;
+  }
+  p.teams img{
+    width: 25px;
+  }
+  .team-reveal{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .team-reveal .player{
+    width: 100%;
+    height: 20vh;
+  }
+  .player img{
+    height: 80%;
+  }
+
+
+  
+#main{
+  display: block;
+}
+.contact{
+  margin: auto;
+}
+.contact1 form{
+  border: 1px solid red;
+  width: 100%;
+}
+form .inputBox{
+  color: red;
+}
+
+}
+
+
+@media screen and (max-width: 576px){
+  header{
+    padding: 10px 15px;
+    display: block;
+  }
+  header ul {
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    gap: 10px;
+    font-size: 14px;
+  }
+  .banner{
+    height: 70vh;
+  }
+  p.logo{
+    width: fit-content;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .content h1{
+    font-size: 25px;
+  }
+  .content p{
+    margin-top: 5px;
+    line-height: 1.2em;
+    font-size: small;
+  }
+  .updates h1{
+    font-size: large;
+  }
+  .index-body .updates{
+    margin: 10px 15px;
+  }
+  .update-cont .update{
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .update p{
+    font-size: 5px;
+  }
+  img.poster{
+    height: 20vh;
+  }
+  .about-cont .member{
+    width: 40%;
+    height: 20vh;
+  }
+  .member-desc h2{
+    font-size: small;
+  }
+  .member-desc p{
+    font-size: x-small;
+  }
+  .banner-2{
+    height: 10vh;
+  }
+  .footer-cont-container{
+    display: block;
+  }
+  .footer-cont{
+    width: 100%;
+  }
+.other{
+    height: fit-content;
+}
+.fixture{
+  height: 30vh;
+  font-size: small;
+}
+.fixtures{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.league-team .sect-team{
+  width: 35%;
+}
+p.teams{
+  font-size: medium;
+}
+p.teams img{
+  width: 25px;
+}
+.team-reveal{
+  border: 1px solid yellow;
+  grid-template-columns: repeat(3, 1fr);
+}
+.team-reveal .player{
+  width: 100%;
+  height: 15vh;
+}
+.player img{
+  height: 80%;
+}
+
+#main{
+  display: block;
+}
+.contact{
+  margin: auto;
+}
+.contact1 form{
+  border: 1px solid red;
+  width: 100%;
+}
+form .inputBox{
+  color: red;
+}
+}
+
+
+
+  </style>
+</head>
+<body>
+  <footer>
+    <div class="footer-cont-container">
+      <div class="footer-cont">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis expedita, voluptate eum Lorem ipsum dolor, sit amet consectetur adipisicing jnh uih m9j ij9j09.k0k.09  <br> <br></p>
+    </div>
+    <div class="footer-cont">
+        <h4>Get in Touch</h4>
+        <p class="head">Location:</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisi jjuhihijin.</p>
+        <p class="head">Contact:</p>
+        <p>Phone : +012 345 6789 0123 <br>
+            Email : info@example.com</p>
+        </div>
+        <div class="footer-cont">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="gallery.html">fixtures</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="news&events.html">news & events</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-cont">
+            <h4>Sign up for your offers</h4>
+            <p>By suscribing to our mailing list, you will always get latest news and updates from us.</p>
+            <input type="email" placeholder="Enter your email...">
+        </div>
+    </div>
+    <p class="end-credits"> ©2023 Bet-City. All Rights Reserved | Design by <span>Website Wizards</span></p>    
+</footer>
+</body>
+</html>
